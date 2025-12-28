@@ -1,14 +1,13 @@
----
+﻿---
 layout: default
 title: Home
 ---
 
-# Emad Razavi
-Robotics engineer. Perception and navigation.
+Hi, I'm Emad.
 
-## Projects
+I build robotics systems focused on perception and navigation.
 
-
-## Contact
-- Email: emad.razavi@outlook.com
-- GitHub: https://github.com/Emaaaad
+## Highlights
+- Semantic mapping and object-goal navigation
+- ROS 2 integration and reliable bringup
+- Practical experiments in real indoor spaces
