@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }} · {{ site.title }}</title>
 
-    <!-- Theme CSS (provided by the GitHub Pages theme) -->
+    <!-- Theme CSS (from the GitHub Pages theme) -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-    <!-- Your small overrides -->
+    <!-- Your overrides -->
     <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
   </head>
+
   <body>
-    <header class="wrap header">
-      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <nav class="nav">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/master-thesis/' | relative_url }}">Master Thesis</a>
-        <a href="{{ '/assets/cv.pdf' | relative_url }}">Download CV</a>
-      </nav>
+    <header class="site-header">
+      <div class="wrap header">
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/master-thesis/' | relative_url }}">Master Thesis</a>
+          <a href="{{ '/assets/cv.pdf' | relative_url }}" target="_blank" rel="noopener">Download CV</a>
+          <a href="{{ '/' | relative_url }}#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main class="wrap">
