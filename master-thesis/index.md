@@ -8,6 +8,9 @@ title: Master Thesis
   <p style="margin-bottom:0">
     Two-stage workflow. First, a short teleop run builds a 2D map and saves confirmed object instances into a small semantic database.
     Then the robot localizes on the saved map and navigates to a selected object with a safe standoff goal using Nav2.
+  <p style="margin-top:12px; margin-bottom:0">
+    <a class="btn" href="{{ '/assets/thesis.pdf' | relative_url }}" target="_blank" rel="noopener">Download thesis PDF</a>
+  </p>
   </p>
 </div>
 
