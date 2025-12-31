@@ -3,11 +3,7 @@ layout: default
 title: Home
 ---
 
-Hi, I'm Emad.
+I work on practical robotics, mainly perception and navigation for mobile robots.
 
-I build robotics systems focused on perception and navigation.
-
-## Highlights
-- Semantic mapping and object-goal navigation
-- ROS 2 integration and reliable bringup
-- Practical experiments in real indoor spaces
+See: [Master Thesis]({{ '/master-thesis/' | relative_url }})  
+Download: [CV]({{ '/assets/cv.pdf' | relative_url }})

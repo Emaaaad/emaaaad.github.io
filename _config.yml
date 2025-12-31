@@ -1,3 +1,5 @@
 ﻿title: Emad Razavi
-description: Personal website
-theme: jekyll-theme-minimal
+description: Robotics MSc. Perception and navigation for mobile robots.
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
