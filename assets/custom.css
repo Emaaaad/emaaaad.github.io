@@ -3,26 +3,40 @@
   --radius: 14px;
 }
 
+/* base */
 body{
   font-size: 18px;
   line-height: 1.75;
   background: #fbfbfb;
 }
 
+/* === hard override of the theme's left sidebar header === */
+header{
+  float: none !important;
+  width: auto !important;
+  position: static !important;
+}
+
+/* your top bar */
+header.site-header{
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 50 !important;
+  width: 100% !important;
+
+  background: rgba(251,251,251,0.92) !important;
+  backdrop-filter: blur(6px) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.06) !important;
+}
+
+/* layout container */
 .wrap{
   max-width: var(--max);
   margin: 0 auto;
   padding: 22px;
 }
 
-.site-header{
-  position: sticky;
-  top: 0;
-  background: rgba(251,251,251,0.92);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
+/* top row */
 .header{
   display: flex;
   align-items: center;
@@ -35,23 +49,50 @@ body{
   text-decoration: none;
   color: inherit;
   font-size: 20px;
+  white-space: nowrap;
 }
 
+/* nav in one line */
+.nav{
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* hide scrollbar but keep scroll */
+.nav::-webkit-scrollbar{ height: 6px; }
+.nav::-webkit-scrollbar-thumb{ background: rgba(0,0,0,0.12); border-radius: 999px; }
+
 .nav a{
-  margin-left: 14px;
+  display: inline-block !important;
+  white-space: nowrap !important;
   text-decoration: none;
   color: inherit;
-  font-weight: 600;
-  opacity: 0.85;
+  font-weight: 650;
+  opacity: 0.88;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
 }
 
 .nav a:hover{ opacity: 1; }
 
+/* kill any float effect on content */
+main{
+  float: none !important;
+  width: auto !important;
+}
+
+/* cards and sections */
 .hero{
   background: #fff;
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: var(--radius);
-  padding: 22px 22px;
+  padding: 22px;
   margin-top: 10px;
 }
 
@@ -59,31 +100,6 @@ body{
   margin: 0 0 8px 0;
   font-size: 34px;
   line-height: 1.2;
-}
-
-.hero p{
-  margin: 0 0 14px 0;
-  opacity: 0.9;
-}
-
-.btn{
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.12);
-  text-decoration: none;
-  margin-right: 10px;
-  margin-top: 6px;
-}
-
-.btn.primary{
-  background: #111;
-  color: #fff;
-  border-color: #111;
-}
-
-.section{
-  margin-top: 26px;
 }
 
 .card{
@@ -94,6 +110,9 @@ body{
   margin: 14px 0;
 }
 
+.section{ margin-top: 26px; }
+
+/* centered smaller videos */
 .video{
   position: relative;
   width: 100%;
